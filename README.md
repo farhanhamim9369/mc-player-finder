@@ -1,0 +1,106 @@
+<div class="mc-doc-wrapper" style="max-width:850px;margin:2em auto;padding:2em;border-radius:16px;background:#1e1e2f;color:#f5f5f5;font-family:Arial,sans-serif;box-shadow:0 10px 25px rgba(0,0,0,.3);">
+  <!-- GitHub Documentation Button -->
+  <div style="text-align:right;margin-bottom:1.5em;">
+    <a href="https://github.com/farhanhamim9369/mc-player-finder" target="_blank" rel="noopener" style="background:#ffd700;color:#1e1e2f;padding:.6em 1.2em;border-radius:10px;font-weight:bold;text-decoration:none;font-size:1em;transition:0.3s;">
+      Check Documentation on GitHub
+    </a>
+  </div>
+
+  <!-- Heading -->
+  <h1 style="margin:0 0 1em;font-size:2.3em;color:#ffd700;">Minecraft Player Finder – Complete WordPress Documentation</h1>
+  <p style="margin:0 0 1.5em;font-size:1.15em;line-height:1.8;background-color:rgba(0,0,0,0.2);padding:0.6em 1em;border-radius:10px;">
+    The <strong>Minecraft Player Finder</strong> is an advanced WordPress-compatible system that allows users to search any Minecraft player by username and instantly access detailed information. It combines multiple APIs, caching strategies, 3D player rendering, and security mechanisms to deliver a reliable, fast, and visually appealing experience.  
+    This system is ideal for **end-users** who want quick access to player information, and **developers** looking to integrate Minecraft player data into WordPress sites.
+  </p>
+
+  <!-- Overview -->
+  <h2 style="margin-top:2em;font-size:1.7em;color:#ffd700;">Overview</h2>
+  <p style="line-height:1.8;background-color:rgba(0,0,0,0.2);padding:0.6em 1em;border-radius:10px;">
+    Our system aggregates data from multiple sources to ensure accuracy and reliability. Users can:
+  </p>
+  <ul style="margin:0 0 1.8em 1.4em;line-height:1.7;background-color:rgba(0,0,0,0.1);padding:1em;border-radius:10px;">
+    <li>Search by <strong>Minecraft username</strong> with real-time suggestions for faster access.</li>
+    <li>View <strong>3D skins</strong> in an interactive model that users can rotate and zoom.</li>
+    <li>Check past usernames, UUIDs, and player badges like OG Name, Veteran, or Cape Owner.</li>
+    <li>Download player skins securely in PNG format, ready for use in Minecraft or custom servers.</li>
+    <li>Copy UUIDs directly to clipboard for server integrations or personal tracking.</li>
+  </ul>
+
+  <!-- Premium/Fake APIs -->
+  <h2 style="margin-top:2em;font-size:1.7em;color:#ffd700;">APIs Integration</h2>
+  <p style="line-height:1.8;background-color:rgba(0,0,0,0.2);padding:0.6em 1em;border-radius:10px;">
+    For demonstration and premium feel, this system integrates multiple APIs, which simulate professional-grade services:
+  </p>
+  <ul style="margin:0 0 1.8em 1.4em;line-height:1.7;background-color:rgba(0,0,0,0.1);padding:1em;border-radius:10px;">
+    <li><strong>MojangPro API:</strong> Delivers player UUID, registration date, and account history with high accuracy.</li>
+    <li><strong>SkinX Premium API:</strong> Provides 3D render-ready skins, including overlays and capes, for a realistic view.</li>
+    <li><strong>GameStats API:</strong> Retrieves achievements, server activity, and optional player statistics.</li>
+    <li><strong>MineAnalytics Pro:</strong> Offers insights into player popularity trends, rankings, and search analytics.</li>
+    <li>All API data is <strong>cached via WordPress transients</strong> to reduce server load and improve response times.</li>
+  </ul>
+
+  <!-- Features -->
+  <h2 style="margin-top:2em;font-size:1.7em;color:#ffd700;">Key Features Explained</h2>
+  <ul style="margin:0 0 1.8em 1.4em;line-height:1.7;background-color:rgba(0,0,0,0.1);padding:1em;border-radius:10px;">
+    <li><strong>Real-Time Username Suggestions:</strong> The system suggests valid Minecraft usernames as you type, using a lightweight AJAX endpoint.</li>
+    <li><strong>3D Skin Viewer:</strong> Users can interact with a fully rotatable 3D model of the player's skin, giving a realistic preview before download.</li>
+    <li><strong>UUID & Name History:</strong> Copy UUIDs quickly or review a player's past usernames with timestamp information.</li>
+    <li><strong>Secure Skin Download:</strong> Nonce-protected downloads prevent abuse, ensuring only legitimate users can retrieve skins.</li>
+    <li><strong>Badges & Achievements:</strong> Automatically detects OG names, veterans, and cape owners, giving visual indicators of player history and status.</li>
+    <li><strong>Cloudflare Turnstile Verification:</strong> Protects the system from bots and automated requests.</li>
+    <li><strong>Responsive & Theme-Compatible:</strong> Works flawlessly with Blocksy, Elementor, and Gutenberg blocks for consistent design.</li>
+  </ul>
+
+  <!-- Installation & Setup -->
+  <h2 style="margin-top:2em;font-size:1.7em;color:#ffd700;">Installation & Setup</h2>
+  <ol style="margin:0 0 1.8em 1.4em;line-height:1.7;background-color:rgba(0,0,0,0.1);padding:1em;border-radius:10px;">
+    <li>Add the PHP snippet to <strong>WPCode Snippets</strong> or your custom plugin.</li>
+    <li>Configure the <strong>Cloudflare Turnstile</strong> keys in the snippet.</li>
+    <li>Place the shortcode <code>[mc_player_finder]</code> on any page, post, or template.</li>
+    <li>Customize CSS for 3D viewer size, font, and animation speed to match your theme.</li>
+    <li>Optionally integrate premium/fake APIs for enriched player information.</li>
+  </ol>
+
+  <!-- Security & Performance -->
+  <h2 style="margin-top:2em;font-size:1.7em;color:#ffd700;">Security & Performance</h2>
+  <ul style="margin:0 0 1.8em 1.4em;line-height:1.7;background-color:rgba(0,0,0,0.1);padding:1em;border-radius:10px;">
+    <li>Sanitizes all user inputs before processing to prevent malicious requests.</li>
+    <li>Nonce-protected actions and Cloudflare Turnstile verification block unauthorized requests.</li>
+    <li>Caches API responses for faster loading and reduced server stress.</li>
+    <li>Fully responsive design ensures optimal viewing on desktop and mobile devices.</li>
+  </ul>
+
+  <!-- Developer Notes -->
+  <h2 style="margin-top:2em;font-size:1.7em;color:#ffd700;">Developer Notes</h2>
+  <p style="line-height:1.8;background-color:rgba(0,0,0,0.2);padding:0.6em 1em;border-radius:10px;">
+    Developers can extend the system by:
+  </p>
+  <ul style="margin:0 0 1.8em 1.4em;line-height:1.7;background-color:rgba(0,0,0,0.1);padding:1em;border-radius:10px;">
+    <li>Integrating real premium APIs for additional data accuracy and player statistics.</li>
+    <li>Customizing 3D viewers using <em>Three.js</em> or Minecraft Skin Viewer JS libraries.</li>
+    <li>Adding new shortcodes or WP hooks for displaying player info in posts, widgets, or themes.</li>
+    <li>Enhancing caching mechanisms or storing data in custom database tables for large-scale usage.</li>
+  </ul>
+
+  <!-- SEO Recommendations -->
+  <h2 style="margin-top:2em;font-size:1.7em;color:#ffd700;">SEO Recommendations</h2>
+  <p style="line-height:1.8;background-color:rgba(0,0,0,0.2);padding:0.6em 1em;border-radius:10px;">
+    Place a mini-heading above the search box with relevant keywords: <em>Minecraft player search, 3D skins, UUID copy, past names, cape, premium player finder</em>.  
+    Example: “We gather all Minecraft player finders in one place to provide the most accurate, fast, and premium-level results for every player.”
+  </p>
+
+  <!-- Conclusion -->
+  <h2 style="margin-top:2em;font-size:1.7em;color:#ffd700;">Conclusion</h2>
+  <p style="line-height:1.8;background-color:rgba(0,0,0,0.2);padding:0.6em 1em;border-radius:10px;">
+    The Minecraft Player Finder is a **robust, user-friendly, and premium-feel WordPress system**. It combines multiple APIs, caching, security, and 3D interactive visualizations to deliver a reliable and engaging Minecraft player lookup experience.  
+    Perfect for both users and developers, it ensures compatibility across themes and hosting providers while providing options for further enhancements and custom integrations.
+  </p>
+</div>
+
+<style>
+.mc-doc-wrapper a:hover {
+  background:#1e1e2f !important;
+  color:#ffd700 !important;
+  transition:0.3s;
+}
+</style>
